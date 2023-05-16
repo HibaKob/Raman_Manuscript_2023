@@ -6,7 +6,7 @@ Emma Lejeune, and Ritu Raman (link forthcoming).
 
 ## Code description
 The ``code`` folder in this repository contains $4$ python files: ``prepare_files.py``, ``run_code.py``, ``image_analysis.py``, and ``strain_analysis.py``. 
-
+The ``prepare_files.py`` file contains all the pre-processing 
 
 ## Running the code
 
