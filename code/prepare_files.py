@@ -91,26 +91,26 @@ plt.savefig(str(pngs_data_path) + "/threshold.pdf", format='pdf')
 
 
 # remove lit up frames
-# all_data_bright_removed = []
-# for kk in range(0, len(all_data)):
-#     bright_removed = all_data[kk][np.asarray(all_keep[kk]) > 0, :, :]
-#     all_data_bright_removed.append(bright_removed)
+all_data_bright_removed = []
+for kk in range(0, len(all_data)):
+    bright_removed = all_data[kk][np.asarray(all_keep[kk]) > 0, :, :]
+    all_data_bright_removed.append(bright_removed)
 
 
 # save the final data in our modified fashion
-# for kk in range(0, len(file_names)):
-#     np.save(str(new_data_path) + "/" + file_names[kk] + ".npy", all_data_bright_removed[kk])
+for kk in range(0, len(file_names)):
+    np.save(str(new_data_path) + "/" + file_names[kk] + ".npy", all_data_bright_removed[kk])
 
 # save data in our modified fashion as individual TIF frames
-# for ff in file_names:
-#     frames_npy = np.load(str(new_data_path) + '/' + ff + '.npy')
-#     num_frames = len(frames_npy)
-#     data_res_folder = self_path.joinpath(ff).resolve()
-#     if data_res_folder.exists() is False:
-#         os.mkdir(data_res_folder)
-#     imgs_folder = data_res_folder.joinpath('movie').resolve()
-#     if imgs_folder.exists() is False:
-#         os.mkdir(imgs_folder)
-#     for ii in range(num_frames):
-#         gray_scale_im = frames_npy[ii].astype('uint8')
-#         imageio.imwrite(str(imgs_folder) + '/%04d.TIF'%(ii), gray_scale_im)
+for ff in file_names:
+    frames_npy = np.load(str(new_data_path) + '/' + ff + '.npy')
+    num_frames = len(frames_npy)
+    data_res_folder = self_path.joinpath(ff).resolve()
+    if data_res_folder.exists() is False:
+        os.mkdir(data_res_folder)
+    imgs_folder = data_res_folder.joinpath('movie').resolve()
+    if imgs_folder.exists() is False:
+        os.mkdir(imgs_folder)
+    for ii in range(num_frames):
+        gray_scale_im = frames_npy[ii].astype('uint8')
+        imageio.imwrite(str(imgs_folder) + '/%04d.TIF'%(ii), gray_scale_im)
