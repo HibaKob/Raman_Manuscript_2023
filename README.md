@@ -5,5 +5,6 @@ This repository contains the code used to quantify the mechanical behavior of op
 Emma Lejeune, and Ritu Raman (link forthcoming). 
 
 ## Code description
+The ``code`` folder 
 
 ## Running the code
