@@ -7,7 +7,12 @@ Emma Lejeune, and Ritu Raman (link forthcoming).
 ## Code description
 The ``code`` folder in this repository contains $4$ python files: ``prepare_files.py``, ``run_code.py``, ``image_analysis.py``, and ``strain_analysis.py``. 
 
-The ``prepare_files.py`` file contains the script required to perform the necessary video pre-processing steps. 
+* ``prepare_files.py`` file contains the script required to perform the necessary video pre-processing steps and skip the frames where light stimulation takes place.  
+* ``run_code.py`` file runs the tracking pipeline to output and visualize the resutls that mainly include full-field displacements and sub-domain averaged strains. 
+* ``image_analysis.py`` script contains the functions to identify fiducial markers, track them across consecutive frames, and compute full-field displacement results. 
+* ``strain_analysis.py`` script contains the functions to divide the muscle sheet into a grid box and compute the average Green-Lagrange strain in each of these subdomains.  
+
+For detailed information on the main functionalities contained in ``image_analysis.py`` and ``strain_analysis.py``, we refer the interested user to the main GitHub repository from which this current one is adapted: [MicroBundleCompute](https://github.com/HibaKob/MicroBundleCompute)
 
 ## Running the code
 
