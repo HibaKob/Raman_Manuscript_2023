@@ -13,10 +13,6 @@ from skimage import io
 from typing import List, Union
 import warnings
 
-def hello_microbundle_compute() -> str:
-    "Given no input. Simple hello world as a test function."
-    return "Hello World!"
-
 
 def read_tiff(img_path: Path) -> np.ndarray:
     """Given a path to a tiff. Will return an array."""
