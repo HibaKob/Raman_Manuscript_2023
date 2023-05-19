@@ -26,7 +26,6 @@ if pngs_data_path.exists() is False:
     os.mkdir(pngs_data_path)
 
 # specify details of what to segment
-# file_names = ["control1", "control2", "control3", "control4", "stim1", "stim2", "stim3", "stim4"]
 file_names = ["control1"]
 
 first_frame = [8]
@@ -34,14 +33,6 @@ last_frame = [98]
 light_on_1 = [9]
 light_on_2 = [39]
 light_on_3 = [69]
-
-# first_frame = [8, 146, 27, 197, 31, 356, 228, 267]
-# last_frame = [98, 236, 117, 287, 121, 446, 318, 357]
-# light_on_1 = [9, 147, 28, 198, 32, 357, 229, 268]
-# light_on_2 = [39, 177, 58, 228, 62, 387, 258, 298]
-# light_on_3 = [69, 207, 88, 258, 91, 417, 288, 327]
-
-
 
 # adjust all given values for 0 based indexing
 def adjust_0_based(li):
