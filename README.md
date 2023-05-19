@@ -15,7 +15,7 @@ The ``code`` folder in this repository contains $4$ python files: ``prepare_file
 For detailed information on the main functionalities contained in ``image_analysis.py`` and ``strain_analysis.py``, we refer the interested user to the main GitHub repository from which this current one is adapted: [MicroBundleCompute](https://github.com/HibaKob/MicroBundleCompute) and the accompanying manuscripty (link forthcoming) 
 
 ## Running the code
-In the ``tutorial`` folder, we include a single experimental example to demonstrate the required initial folder structure as well as the steps to successfully run the provided scripts in the ``code`` folder.
+In the ``tutorial`` folder, we include a single experimental example, "control1.tif", to demonstrate the required initial folder structure as well as the steps to successfully run the provided scripts in the ``code`` folder.
 
 The ``tutorial`` folder should, before running the code, contain the following:
 
