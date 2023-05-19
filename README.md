@@ -26,7 +26,7 @@ The ``tutorial`` folder should, before running any code, contain the following:
 ```bash
 |___ tutorial
 |        |___ original_files
-|                |___ "control1.tif"
+|                |___ "control1.tif"  (download the file using this [link](https://drive.google.com/drive/folders/1k_46V8M8bVS_WozqFRbu1GpmLokiTdUl?usp=share_link))
 ```
 
 The first step is to run the ``prepare_files.py`` script. In a Terminal running python3 (for example a conda virtual environment where all the needed libraries are installed, check [MicroBundleCompute](https://github.com/HibaKob/MicroBundleCompute) for more information on setting up a virtual environment), navigate to the folder where ``prepare_files.py’’ is saved (for example cd /Users/Desktop/code).
