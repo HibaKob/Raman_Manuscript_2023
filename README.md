@@ -4,6 +4,10 @@
 This repository contains the code used to quantify the mechanical behavior of optically stimulated muscle sheets as described in the manuscript "Magnetic Hydrogel Actuators as Mechanically Active Cell Culture Substrates" by Brandon Rios, Angel Bu, Tara Sheehan, Hiba Kobeissi, 
 Emma Lejeune, and Ritu Raman (link forthcoming). 
 
+<p align = "center">
+<img alt="tracking visualization with interpolation" src="figs/abs_disp.gif" width="80%" />
+</p>
+
 ## Code description
 The ``code`` folder in this repository contains $4$ python files: ``prepare_files.py``, ``run_code.py``, ``image_analysis.py``, and ``strain_analysis.py``. 
 
@@ -139,15 +143,15 @@ The visualizations of these outputs will be stored in the ``visualizations`` fol
 For the displacement tracking results, we plot absolute displacement of the identified markers as well as the displacements in the x and y directions.
 
 <p align = "center">
-<img alt="tracking visualization with interpolation" src="figs/abs_disp.gif" width="100%" />
-<img alt="column tracking visualization" src="figs/x_disp.gif" width="100%" />
+<img alt="tracking visualization with interpolation" src="figs/abs_disp.gif" width="60%" />
+<img alt="column tracking visualization" src="figs/x_disp.gif" width="60%" />
 </p>
 
 For the strain tracking results, we plot $E_{xx}$, $E_{xy}$, and $E_{yy}$ for each subdomain. Specifically, we visualize these strains organized in space in ``sub_domain_strain_E**.gif`` and ``%04d_strain.png``, and organized in time (i.e. as a timeseries vs. frame number) in ``strain_timeseries_E**.pdf``. The legend in the timeseries plots corresponds to the subdomain labels in ``strain_sub_domain_key.pdf``.
 
 <p align = "center">
-<img alt="strain visualization" src="figs/sub_domain_strain_Exx.gif" width="100%" />
-<img alt="strain timeseries visualization" src="figs/strain_timeseries_Err_.pdf" width="100%" />
+<img alt="strain visualization" src="figs/sub_domain_strain_Exx.gif" width="60%" />
+<img alt="strain timeseries visualization" src="figs/strain_timeseries_Err_.pdf" width="60%" />
 </p>
 
 
