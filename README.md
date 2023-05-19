@@ -130,9 +130,25 @@ As a general note, it is crucial to have the files ``run_code.py``, ``image_anal
 ### Understanding the output files
 The outputs of running this code will be stored in the ``results`` folder as text files. 
 * ``"pos_x.txt"`` and ``"pos_y.txt"`` files contain information regarding the x (horizontal) and y (vertical) positions of the tracked marker (fiducial) points. In these text files, the rows correspond to individual markers, while the columns correspond to the frames.
-* ``"strain__Fxx.txt"``, ``"strain__Fxy.txt"``, ``"strain__Fyx.txt"``, and ``"strain__Fyy.txt"``
+* ``"strain__Fxx.txt"``, ``"strain__Fxy.txt"``, ``"strain__Fyx.txt"``, and ``"strain__Fyy.txt"`` files store the corresponding component of the deformation gradient for each subdomain per frame.
 * ``"strain__sub_domain_info.txt"`` file contains information about the strain subdomains. The first row contains the number of row sub divisions and the number of column sub divisions. The second row contains the number of pixels in the subdomain sides. 
-* ``"strain__x.txt"`` and ``"strain__y.txt"`` 
+* ``"strain__x.txt"`` and ``"strain__y.txt"`` contain the x and y positions of the center of each subdomain per frame.
+
+The visualizations of these outputs will be stored in the ``visualizations`` folder as ``.png`` and ``.gif`` files. Plots, however, are stored as ``.pdf`` files for higher resolution.
+
+For the displacement tracking results, we plot absolute displacement of the identified markers as well as the displacements in the x and y directions.
+
+<p align = "center">
+<img alt="tracking visualization with interpolation" src="tutorials/figs/Visualizations/rotated_abs_disp_with_interp.gif" width="100%" />
+<img alt="column tracking visualization" src="tutorials/figs/Visualizations/column_disp.gif" width="100%" />
+</p>
+
+For the strain tracking results, we plot $E_{xx}$, $E_{xy}$, and $E_{yy}$ for each subdomain. Specifically, we visualize these strains organized in space in ``sub_domain_strain_E**.gif`` and ``%04d_strain.png``, and organized in time (i.e. as a timeseries vs. frame number) in ``strain_timeseries_E**.pdf``. The legend in the timeseries plots corresponds to the subdomain labels in ``strain_sub_domain_key.pdf``.
+
+<p align = "center">
+<img alt="strain visualization" src="tutorials/figs/Visualizations/sub_domain_strain_Err.gif" width="100%" />
+<img alt="strain timeseries visualization" src="tutorials/figs/Visualizations/strain_timeseries_Err_beat0.png" width="100%" />
+</p>
 
 
 ## References to related work 
