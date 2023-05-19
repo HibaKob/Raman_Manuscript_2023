@@ -125,9 +125,15 @@ Running the code generates the following outputs:
 
 
 ```
- 
- 
 As a general note, it is crucial to have the files ``run_code.py``, ``image_analysis.py``, and ``strain_analysis.py`` saved in the same directory. It is also recommended to have ``prepared_files.py`` file in the same one as well. 
+
+### Understanding the output files
+The outputs of running this code will be stored in the ``results`` folder as text files. 
+* ``"pos_x.txt"`` and ``"pos_y.txt"`` files contain information regarding the x (horizontal) and y (vertical) positions of the tracked marker (fiducial) points. In these text files, the rows correspond to individual markers, while the columns correspond to the frames.
+* ``"strain__Fxx.txt"``, ``"strain__Fxy.txt"``, ``"strain__Fyx.txt"``, and ``"strain__Fyy.txt"``
+* ``"strain__sub_domain_info.txt"`` file contains information about the strain subdomains. The first row contains the number of row sub divisions and the number of column sub divisions. The second row contains the number of pixels in the subdomain sides. 
+* ``"strain__x.txt"`` and ``"strain__y.txt"`` 
+
 
 ## References to related work 
 Related work can be found here:
