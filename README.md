@@ -151,7 +151,8 @@ For the strain tracking results, we plot $E_{xx}$, $E_{xy}$, and $E_{yy}$ for ea
 
 <p align = "center">
 <img alt="strain visualization" src="figs/sub_domain_strain_Exx.gif" width="60%" />
-<img alt="strain timeseries visualization" src="figs/strain_timeseries_Exx.png" width="60%" />
+<img alt="strain timeseries visualization" src="figs/strain_timeseries_Exx.png" width="40%" />
+ <img alt="strain timeseries visualization" src="figs/strain_sub_domain_key.png" width="40%" />
 </p>
 
 
