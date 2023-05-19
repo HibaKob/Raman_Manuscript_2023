@@ -25,7 +25,7 @@ The ``tutorial`` folder should, before running any code, contain the following:
 |                |___ "control1.tif"
 ```
 
-The first step is to run the ``prepare_files.py`` script. In a Terminal running python3 (for example a conda virtual environment where all the needed libraries are installed, check [MicroBundleCompute](https://github.com/HibaKob/MicroBundleCompute) for more information on setting a virtual environment), navigate to the folder where ``prepare_files.py’’ is saved (for example cd /Users/Desktop/code).
+The first step is to run the ``prepare_files.py`` script. In a Terminal running python3 (for example a conda virtual environment where all the needed libraries are installed, check [MicroBundleCompute](https://github.com/HibaKob/MicroBundleCompute) for more information on setting up a virtual environment), navigate to the folder where ``prepare_files.py’’ is saved (for example cd /Users/Desktop/code).
 Then simply run the command ``python3 prepare_files.py`` followed by the path of the main folder containing ``original_files``. For example:
 
 ```bash
@@ -91,12 +91,43 @@ Running the code generates the following outputs:
 |                       |___"tissue_mask.txt"
 |                       |___"tissue_mask.png" (optional)
 |                |___ results
-|                       |___"*.TIF"
+|                       |___"pos_x.txt"
+|                       |___"pos_y.txt"
+|                       |___"strain__Fxx.txt"
+|                       |___"strain__Fxy.txt"
+|                       |___"strain__Fyx.txt"
+|                       |___"strain__Fyy.txt"
+|                       |___"strain__sub_domain_info.txt"
+|                       |___"strain__x.txt"
+|                       |___"strain__y.txt"
 |                |___ visualizations
+|                       |___pngs
+|                           |___pngs_abs
+|                               |___"%04d_disp.png"
+|                           |___pngs_x
+|                               |___"%04d_disp.png"
+|                           |___pngs_y
+|                               |___"%04d_disp.png"
+|                       |___"abs_disp.gif"
+|                       |___"x_disp.gif"
+|                       |___"y_disp.gif"
+|                       |___strain_pngs
+|                           |___Exx
+|                               |___"%04d_strain.png"
+|                           |___Exy
+|                               |___"%04d_strain.png"
+|                           |___Eyy
+|                               |___"%04d_strain.png"
+|                           |___"strain_sub_domain_key.pdf"
+|                       |___"sub_domain_strain_Exx.gif"
+|                       |___"sub_domain_strain_Exy.gif"
+|                       |___"sub_domain_strain_Eyy.gif"
+
+
 ```
  
  
-Note that it is crucial to have the files ``run_code.py``, ``image_analysis.py``, and ``strain_analysis.py`` saved in the same directory and it is recommended to have ``prepared_files.py`` file in the same one as well. 
+As a general note, it is crucial to have the files ``run_code.py``, ``image_analysis.py``, and ``strain_analysis.py`` saved in the same directory. It is also recommended to have ``prepared_files.py`` file in the same one as well. 
 
 ## References to related work 
 Related work can be found here:
