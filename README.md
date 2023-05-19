@@ -25,7 +25,7 @@ The ``tutorial`` folder should, before running any code, contain the following:
 |                |___ "control1.tif"
 ```
 
-The first step is to run the ``prepare_files.py`` script. In a Terminal running python3 (for example a conda virtual environment where all the needed libraries are installed), navigate to the folder where ``prepare_files.py’’ is saved (for example cd /Users/Desktop/code).
+The first step is to run the ``prepare_files.py`` script. In a Terminal running python3 (for example a conda virtual environment where all the needed libraries are installed, check [MicroBundleCompute](https://github.com/HibaKob/MicroBundleCompute) for more information on setting a virtual environment), navigate to the folder where ``prepare_files.py’’ is saved (for example cd /Users/Desktop/code).
 Then simply run the command ``python3 prepare_files.py`` followed by the path of the main folder containing ``original_files``. For example:
 
 ```bash
@@ -46,11 +46,57 @@ Running the ``prepare_files.py`` script creates new folders and files as follows
 |                       |___"*.TIF"
 ```
 
- The processed movies are outpuIed as 1) ``.npy`` files saved in ``prepared_files`` folder and 2) individual ``.TIF`` frames saved in ``movie`` folder contained in an automatically created folder having the same name as the input sample as specified inside the `prepare_files.py’’ file.
+The processed movies are outpuIed as 1) ``.npy`` files saved in ``prepared_files`` folder and 2) individual ``.TIF`` frames saved in ``movie`` folder contained in an automatically created folder having the same name as the input sample as specified inside the ``prepare_files.py`` file.
+The purpose of this step is to exclude frames with much higher intensities than the median intensity of the entire movie. The "threshold.pdf" file within the "visualize_files" folder visualizes the frames to be excluded by marking them with red dots. 
+ 
+The second step is to manually create a binary mask of the muscle region and save it as a binary text file where the background is ``0`` and the muscle sheet is ``1``. The mask should be saved as ``tissue_mask.txt`` in a folder named ``masks`` or otherwise, the code pipeline would fail. We provide ``tissue_mask.png`` as a mere visualization. 
+
+The ``tutorial`` folder should now contain the following:
+ 
+ ```bash
+|___ tutorial
+|        |___ original_files
+|                |___ "control1.tif"
+|        |___ prepared_files
+|                |___ "control1.npy"
+|        |___ visualize_files
+|                |___ "threshold.pdf"
+|        |___ control1
+|                |___ movie
+|                       |___"*.TIF"
+|                |___ masks
+|                       |___"tissue_mask.txt"
+|                       |___"tissue_mask.png" (optional)
+```
+
+The next step is to run the tracking algorithm and visualize the output. To do so, simply run the command ``python3 run_code.py`` in the same Terminal running python as above, with the parent directory specified as the one containing the files ``run_code.py``, ``image_analysis.py``, and ``strain_analysis.py`` (in case it is different than the one containing ``prepared_files.py``), followed by the path of the example to be tracked. For example, to run "control1" tutorial:
+
+```bash 
+python3 run_code.py /Users/Desktop/tutorial/control1
+```
+
+Running the code generates the following outputs:
+```bash
+|___ tutorial
+|        |___ original_files
+|                |___ "control1.tif"
+|        |___ prepared_files
+|                |___ "control1.npy"
+|        |___ visualize_files
+|                |___ "threshold.pdf"
+|        |___ control1
+|                |___ movie
+|                       |___"*.TIF"
+|                |___ masks
+|                       |___"tissue_mask.txt"
+|                       |___"tissue_mask.png" (optional)
+|                |___ results
+|                       |___"*.TIF"
+|                |___ visualizations
+```
  
  
- 
-Note that it is crucial to have the files ``run_code.py``, ``image_analysis.py``, and ``strain_analysis.py`` saved in the same directory. 
+Note that it is crucial to have the files ``run_code.py``, ``image_analysis.py``, and ``strain_analysis.py`` saved in the same directory and it is recommended to have ``prepared_files.py`` file in the same one as well. 
 
 ## References to related work 
 Related work can be found here:
