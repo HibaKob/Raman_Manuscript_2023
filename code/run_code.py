@@ -19,7 +19,6 @@ input_folder = self_path.joinpath(input_folder_str).resolve()
 ia.run_tracking(input_folder)
 
 # run the tracking visualization
-automatic_color_constraint = False # Put False if manual limits are to be specified
 col_min_abs = 0
 col_max_abs = 12
 col_min_row = -4
@@ -50,6 +49,6 @@ sa.run_sub_domain_strain_analysis(input_folder, pillar_clip_fraction, shrink_row
 col_min = -0.02
 col_max = 0.02
 col_map = plt.cm.RdBu
-sa.visualize_sub_domain_strain(input_folder, automatic_color_constraint, col_min, col_max, col_map, is_rotated = False)    
+sa.visualize_sub_domain_strain(input_folder, col_min, col_max, col_map, is_rotated = False)    
 
 
