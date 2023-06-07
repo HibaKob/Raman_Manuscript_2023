@@ -147,12 +147,9 @@ For the displacement tracking results, we plot absolute displacement of the iden
 <img alt="column tracking visualization" src="figs/x_disp.gif" width="60%" />
 </p>
 
-For the strain tracking results, we plot $E_{xx}$, $E_{xy}$, and $E_{yy}$ for each subdomain. Specifically, we visualize these strains organized in space in ``sub_domain_strain_E**.gif`` and ``%04d_strain.png``, and organized in time (i.e. as a timeseries vs. frame number) in ``strain_timeseries_E**.pdf``. The legend in the timeseries plots corresponds to the subdomain labels in ``strain_sub_domain_key.pdf``.
-
+For the strain tracking results, we plot $E_{xx}$, $E_{xy}$, and $E_{yy}$ for each subdomain. 
 <p align = "center">
 <img alt="strain visualization" src="figs/sub_domain_strain_Exx.gif" width="60%" />
-<img alt="strain timeseries visualization" src="figs/strain_timeseries_Exx.png" width="50%" />
- <img alt="strain timeseries visualization" src="figs/strain_sub_domain_key.png" width="50%" />
 </p>
 
 
