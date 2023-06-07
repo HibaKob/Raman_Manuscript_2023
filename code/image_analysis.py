@@ -444,7 +444,5 @@ def run_visualization(folder_path: Path, col_min_abs: Union[int, float] = 0, col
     abs_gif_path = create_gif(folder_path, abs_png_path_list, "abs")
     row_gif_path = create_gif(folder_path, row_png_path_list, "row")
     col_gif_path = create_gif(folder_path, col_png_path_list, "col")
-    # create mp4
-    # mp4_path = create_mp4(folder_path, gif_path)
     return abs_png_path_list, row_png_path_list, col_png_path_list,  abs_gif_path, row_gif_path, col_gif_path
 
