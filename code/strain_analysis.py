@@ -494,7 +494,6 @@ def run_sub_domain_strain_analysis(
 
 def visualize_sub_domain_strain(
     folder_path: Path,
-    automatic_color_constraint: bool = True,
     col_min: Union[float, int] = -0.025,
     col_max: Union[float, int] = 0.025,
     col_map: object = plt.cm.RdBu,
