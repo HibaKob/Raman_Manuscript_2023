@@ -78,11 +78,8 @@ def read_txt_as_mask(file_path: Path) -> np.ndarray:
 def get_tracking_param_dicts() -> dict:
     """Will return dictionaries specifying the feature parameters and tracking parameters.
     In future, these may vary based on version."""
-    # feature_params = dict(maxCorners=10000, qualityLevel=0.1, minDistance=4, blockSize=3)
     feature_params = dict(maxCorners=10000, qualityLevel=0.01, minDistance=12, blockSize=3)
     window = 5
-    
-    # lk_params = dict(winSize=(window, window), maxLevel=5, criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03))
     lk_params = dict(winSize=(window, window), maxLevel=15, criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03))
     return feature_params, lk_params
 
