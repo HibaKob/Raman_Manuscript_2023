@@ -1,7 +1,7 @@
 # Raman_Manuscript_2023
 
 ## Introduction 
-This repository contains the code used to quantify the mechanical behavior of optically stimulated muscle sheets as described in the manuscript "[Mechanically programming anisotropy in engineered muscle with actuating extracellular matrices](DOI:https://doi.org/10.1016/j.device.2023.100097)" by Brandon Rios, Angel Bu, Tara Sheehan, Hiba Kobeissi, Sonika Kohli, Karina Shah, Emma Lejeune, and Ritu Raman. 
+This repository contains the code used to quantify the mechanical behavior of optically stimulated muscle sheets as described in the manuscript "[Mechanically programming anisotropy in engineered muscle with actuating extracellular matrices](https://doi.org/10.1016/j.device.2023.100097)" by Brandon Rios, Angel Bu, Tara Sheehan, Hiba Kobeissi, Sonika Kohli, Karina Shah, Emma Lejeune, and Ritu Raman. 
 
 <p align = "center">
 <img alt="tracking visualization with interpolation" src="figs/abs_disp.gif" width="80%" />
