@@ -213,9 +213,6 @@ def track_all_steps(img_list_uint8: List, mask: np.ndarray,feature_params: dict,
     Note that the returned order of tracked points will match order_list."""
     img_0 = img_list_uint8[0]
     track_points = mask_to_track_points(img_0, mask, feature_params)
-    
-    plt.figure()
-    plt.imshow
     num_track_pts = track_points.shape[0]
     num_imgs = len(img_list_uint8)
     tracker_0 = np.zeros((num_track_pts, num_imgs))
