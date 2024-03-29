@@ -154,7 +154,9 @@ For the strain tracking results, we plot $E_{xx}$, $E_{xy}$, and $E_{yy}$ for ea
 
 ## References to related work 
 Related work can be found here:
-* Das, S. L., Sutherland, B. P., Lejeune, E., Eyckmans, J., & Chen, C. S. (2022). Mechanical response of cardiac microtissues to acute localized injury. American Journal of Physiology-Heart and Circulatory Physiology, 323(4), H738-H748.
+* Kobeissi, H., Jilberto, J., Karakan, M. C., Gao, X., DePalma, S. J., Das, S. L., Quach, L., Urquia, J., Baker, B. M., Chen, C. S., Nordsletten, D., Lejeune, E. (2024). MicroBundleCompute: Automated Segmentation, Tracking, and Analysis of Sub-domain Deformation in Cardiac Microbundles. PLOS One. https://doi.org/10.1371/journal.pone.0298863
+  
+* Das, S. L., Sutherland, B. P., Lejeune, E., Eyckmans, J., & Chen, C. S. (2022). Mechanical response of cardiac microtissues to acute localized injury. American Journal of Physiology-Heart and Circulatory Physiology, 323(4), H738-H748. https://doi.org/10.1152/ajpheart.00305.2022
 
 Related repositories include:
 * https://github.com/elejeune11/Das-manuscript-2022
